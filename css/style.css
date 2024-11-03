@@ -2483,7 +2483,42 @@ button {
 }
 
 .page:hover {
-    transform: scale(1.25); /* Hace que la página se agrande un 25% al pasar el mouse */
+    transform: scale(1.20); /* Hace que la página se agrande un 20% al pasar el mouse */
     z-index: 1; /* Eleva la página por encima de otras al hacer hover */
+}
+/* Media queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .article-container {
+        flex-direction: column; /* Coloca las columnas en una sola columna */
+        margin: 10px;
+    }
+
+    .column {
+        flex: 0 1 100%; /* Las columnas ocupan todo el ancho en pantallas pequeñas */
+        margin: 10px 0;
+    }
+
+    .page {
+        padding: 15px; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    .page:hover {
+        transform: none; /* Desactivar la animación en pantallas pequeñas para evitar superposiciones */
+    }
+}
+
+@media (max-width: 480px) {
+    .page {
+        font-size: 14px; /* Reducir el tamaño de la fuente en pantallas muy pequeñas */
+        padding: 10px;
+    }
+
+    .header h1, .header h2 {
+        font-size: 18px; /* Ajustar el tamaño de los encabezados */
+    }
+
+    .content p {
+        word-wrap: break-word; /* Asegura que las palabras largas se ajusten al ancho de la pantalla */
+    }
 }
 }
