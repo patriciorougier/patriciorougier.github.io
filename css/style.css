@@ -2413,8 +2413,6 @@ button {
 .article-container {
     width: 100%;
     max-width: 21cm; /* Ancho de una hoja A4 */
-    margin: 0; /* Eliminar el margen automático para centrar */
-    padding-left: 0; /* Añadir un margen izquierdo para desplazarlo */
 }
 
 .page {
@@ -2423,10 +2421,18 @@ button {
     margin: 0; /* Eliminar el margen externo */
     padding: 1.5cm; /* Márgenes internos */
     border: 1px solid #ccc; /* Borde del contenedor */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para efecto de profundidad */
-    position: relative; /* Para el pie de página */
+    box-shadow: 0 0 40px rgba(0, 0, 0, 8); /* Sombra para efecto de profundidad */ /* Para el pie de página */
     page-break-after: always; /* Salto de página después de cada sección */
-    margin-bottom: 40px; /* Ajusta el valor según el espacio que desees */
+    margin-bottom: 30px; /* Ajusta el valor según el espacio que desees */
+    -moz-column-count: 2;
+         column-count: 2; /* Divide el contenido en dos columnas */
+    -moz-column-gap: 25px;
+         column-gap: 25px; /* Espacio entre las columnas */
+    background-color: rgb(12 10 9);
+    transition: transform 1.5s ease-in-out;
+    transform-origin: left; /* Controla desde dónde se expande la página */
+    position: relative;
+    z-index: 0; /* Asegura que la página esté en un nivel base */
 }
 
 .custom-header {
@@ -2436,17 +2442,13 @@ button {
 
 .header-text {
     font-family: 'TeX Gyre Termes', serif; /* Cambia a una fuente similar a LaTeX */
-    font-size: 1em;
+    font-size: 0.6em;
     font-weight: bold;
-    line-height: 1.2;
-}
-
-.header-line {
-    margin: 0;
+    line-height: 1;
 }
 
 .separator-line {
-    border-top: 2px solid white; /* Línea de grosor 0.5mm */
+    border-top: 1px solid #ccc; /* Línea de grosor 0.5mm */
     margin-top: 5px;
     width: 100%; /* Ajusta el ancho según necesites */
 }
@@ -2458,7 +2460,7 @@ button {
 .footer {
     text-align: center; /* Centra el texto en el pie de página */
     position: absolute; /* Posiciona el pie en la parte inferior */
-    bottom: 15px; /* Espacio desde el fondo */
+    bottom: 20px; /* Espacio desde el fondo */
     left: 0;
     right: 0;
 }
@@ -2469,5 +2471,19 @@ button {
 
 .page-number {
     font-weight: bold; /* Para hacer que el texto en el footer funcione */
+}
+.article-container .content {
+    font-size: 0.9rem; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.article-container .content h1,
+.article-container .content h2,
+.article-container .content h3 {
+    font-size: 1.2rem; /* Ajusta el tamaño de los encabezados según sea necesario */
+}
+
+.page:hover {
+    transform: scale(1.25); /* Hace que la página se agrande un 25% al pasar el mouse */
+    z-index: 1; /* Eleva la página por encima de otras al hacer hover */
 }
 }
