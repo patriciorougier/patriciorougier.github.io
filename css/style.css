@@ -2489,44 +2489,18 @@ button {
     z-index: 1; /* Eleva la página por encima de otras al hacer hover */
 }
 /* Para dispositivos móviles */
+/* Ajustes específicos para dispositivos móviles */
 @media (max-width: 768px) {
-    body {
-        font-size: 14px; /* Reducir tamaño de la fuente */
-    }
-    
     .page {
-        font-size: 14px; /* Ajustar tamaño de la fuente en el contenedor */
-        padding: 15px; /* Reducir el padding para optimizar el espacio */
+        transform: none; /* Desactivar zoom en móviles */
+        transition: none; /* Sin transición para evitar problemas de visualización */
     }
 
-    .header h1, .header h2 {
-        font-size: 16px; /* Reducir tamaño de los encabezados */
-    }
-
-    .content p, .content h3 {
-        font-size: 14px; /* Tamaño adecuado para contenido */
-        word-wrap: break-word; /* Romper palabras largas para evitar desbordamiento */
-    }
-    
-    .article-container {
-        margin: 10px; /* Reducir márgenes generales */
-    }
-}
-
-/* Para pantallas más pequeñas */
-@media (max-width: 480px) {
-    .page {
-        font-size: 12px; /* Reducir aún más el tamaño de la fuente */
-        padding: 10px; /* Reducir padding */
-    }
-    
-    .header h1, .header h2 {
-        font-size: 14px; /* Ajustar encabezados */
-    }
-
-    .content p, .content h3 {
-        font-size: 12px; /* Tamaño menor de fuente para contenido */
-        overflow-wrap: break-word; /* Asegura que el texto se ajuste */
+    /* Ajustar el tamaño de fuente y márgenes para que se ajuste bien en móviles */
+    .page-content {
+        font-size: 14px; /* Ajustar el tamaño de la fuente */
+        padding: 10px; /* Reducir los márgenes */
+        word-wrap: break-word; /* Asegura que el texto se mantenga dentro de los límites de la pantalla */
     }
 }
 }
