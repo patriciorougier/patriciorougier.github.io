@@ -2517,25 +2517,25 @@ button {
  	}
 
     .article-container p {
-        font-size: 0.9rem; /* Ajusta el tamaño para dispositivos móviles */
+        font-size: 0.7rem; /* Ajusta el tamaño para dispositivos móviles */
     }
 
     .article-container h1 {
-        font-size: 1.8rem; /* Tamaño para h1 en móviles */
+        font-size: 0.7rem; /* Tamaño para h1 en móviles */
     }
 
     .article-container h2 {
-        font-size: 1.3rem; /* Tamaño para h2 en móviles */
+        font-size: 0.8rem; /* Tamaño para h2 en móviles */
     }
 
     .article-container h3 {
-        font-size: 1.1rem; /* Tamaño para h3 en móviles */
+        font-size: 0.9rem; /* Tamaño para h3 en móviles */
     }
     .post-content p,
     .post-content h1,
     .post-content h2,
     .post-content h3 {
-        font-size: 0.9rem; /* Ajusta este valor según sea necesario */
+        font-size: 0.5rem; /* Ajusta este valor según sea necesario */
     }
 }
 }
