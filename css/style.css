@@ -2399,6 +2399,14 @@ button {
     margin: 0 auto; /* Centra el contenedor */
     padding: 20px; /* Añade un poco de espacio interno */
 
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+        padding: 10px; /* Menos espacio interno */
+    }
+
+}
+
 .article-body {
     min-height: 100vh; /* Se asegura de que el contenedor tenga al menos la altura de la ventana */
 }
@@ -2488,17 +2496,11 @@ button {
     .page {
         transition: transform 1.5s ease-in-out;
    	transform-origin: center;
+	font-size: 12px !important;
     }
     .page:hover {
     	transform: scale(1.10); /* Hace que la página se agrande un % al pasar el mouse */
     	z-index: 1; /* Eleva la página por encima de otras al hacer hover */
  	}
-	
-    /* Ajustar el tamaño de fuente y márgenes para que se ajuste bien en móviles */
-    .page-content {
-        font-size: 3.5vw;
-        padding: 10px; /* Reducir los márgenes */
-        word-wrap: break-word; /* Asegura que el texto se mantenga dentro de los límites de la pantalla */
-    }
 }
 }

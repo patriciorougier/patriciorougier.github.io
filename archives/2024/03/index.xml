@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>2024/03 on Patricio Rougier</title>
-    <link>http://localhost:1313/archives/2024/03/</link>
+    <link>https://patriciorougier.github.io/archives/2024/03/</link>
     <description>Recent content in 2024/03 on Patricio Rougier</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sat, 02 Nov 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/archives/2024/03/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://patriciorougier.github.io/archives/2024/03/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Example: Circuit exercises</title>
-      <link>http://localhost:1313/post/tp/</link>
+      <link>https://patriciorougier.github.io/post/tp/</link>
       <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/post/tp/</guid>
+      <guid>https://patriciorougier.github.io/post/tp/</guid>
       <description>&lt;h3 id=&#34;mi-artículo-con-latex&#34;&gt;Mi artículo con LaTeX&lt;/h3&gt;&#xA;&lt;p&gt;Aquí hay una fórmula matemática en línea:  $E = mc^2$&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Y aquí una fórmula en bloque:&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;$$&#xA;\int_{0}^{\infty} e^{-x^2} , dx = \frac{\sqrt{\pi}}{2}&#xA;$$&#xA;La historia de la humanidad está repleta de eventos fascinantes que moldearon el mundo tal como lo conocemos hoy. Desde las primeras civilizaciones en Mesopotamia, Egipto y el valle del Indo, los seres humanos han desarrollado sistemas complejos de gobierno, escritura y tecnología. Las grandes pirámides, construidas por los antiguos egipcios, no solo son un testamento a su habilidad arquitectónica, sino también a su entendimiento de la matemática y la astronomía.&lt;/p&gt;</description>
     </item>
   </channel>
