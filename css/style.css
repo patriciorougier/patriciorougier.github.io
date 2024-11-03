@@ -2531,5 +2531,11 @@ button {
     .article-container h3 {
         font-size: 1.1rem; /* Tamaño para h3 en móviles */
     }
+    .post-content p,
+    .post-content h1,
+    .post-content h2,
+    .post-content h3 {
+        font-size: 0.9rem; /* Ajusta este valor según sea necesario */
+    }
 }
 }
