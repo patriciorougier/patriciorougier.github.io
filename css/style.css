@@ -2488,14 +2488,22 @@ button {
     transform: scale(1.20); /* Hace que la página se agrande un 20% al pasar el mouse */
     z-index: 1; /* Eleva la página por encima de otras al hacer hover */
 }
+
 /* Para dispositivos móviles */
 /* Ajustes específicos para dispositivos móviles */
+
 @media (max-width: 768px) {
     .page {
         transform: none; /* Desactivar zoom en móviles */
         transition: none; /* Sin transición para evitar problemas de visualización */
+   	transform-origin: center;
     }
 
+	.page:hover {
+    	transform: scale(1.20); /* Hace que la página se agrande un 20% al pasar el mouse */
+    	z-index: 1; /* Eleva la página por encima de otras al hacer hover */
+ 	}
+	
     /* Ajustar el tamaño de fuente y márgenes para que se ajuste bien en móviles */
     .page-content {
         font-size: 14px; /* Ajustar el tamaño de la fuente */
