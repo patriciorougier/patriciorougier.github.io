@@ -2399,14 +2399,6 @@ button {
     margin: 0 auto; /* Centra el contenedor */
     padding: 20px; /* Añade un poco de espacio interno */
 
-@media (max-width: 600px) {
-    .container {
-        max-width: 100%; /* Ancho completo en pantallas pequeñas */
-        padding: 10px; /* Menos espacio interno */
-    }
-
-}
-
 .article-body {
     min-height: 100vh; /* Se asegura de que el contenedor tenga al menos la altura de la ventana */
 }
@@ -2421,7 +2413,6 @@ button {
     width: 100%;
     height: 29.7cm; /* Alto de una hoja A4 */
     margin: 0; /* Eliminar el margen externo */
-    font-size: 16px;
     padding: 1.5cm; /* Márgenes internos */
     border: 1px solid #ccc; /* Borde del contenedor */
     box-shadow: 0 0 40px rgba(0, 0, 0, 8); /* Sombra para efecto de profundidad */ /* Para el pie de página */
