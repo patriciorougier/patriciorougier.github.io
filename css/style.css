@@ -2411,16 +2411,35 @@ button {
     min-height: 100vh; /* Se asegura de que el contenedor tenga al menos la altura de la ventana */
 }
 
+/* Cambiar el tamaño de la fuente de los párrafos en el contenido de Markdown */
+.article-container p {
+    font-size: 14pt; /* Ajusta este valor según sea necesario */
+}
 
-.article-container {
-    width: 100%;
-    max-width: 21cm; /* Ancho de una hoja A4 */
+/* Cambiar el tamaño de la fuente de los encabezados */
+.article-container h1 {
+    font-size: 26pt; /* Tamaño para h1 */
+}
+
+.article-container h2 {
+    font-size: 24pt; /* Tamaño para h2 */
+}
+
+.article-container h3 {
+    font-size: 22pt; /* Tamaño para h3 */
+}
+
+/* También puedes ajustar otros elementos, como listas, citas, etc. */
+.article-container ul,
+.article-container ol {
+    font-size: 13pt; /* Tamaño para listas */
 }
 
 .page {
     width: 100%;
     height: 29.7cm; /* Alto de una hoja A4 */
     margin: 0; /* Eliminar el margen externo */
+    font-size: 14pt;
     padding: 1.5cm; /* Márgenes internos */
     border: 1px solid #ccc; /* Borde del contenedor */
     box-shadow: 0 0 40px rgba(0, 0, 0, 8); /* Sombra para efecto de profundidad */ /* Para el pie de página */
@@ -2444,7 +2463,6 @@ button {
 
 .header-text {
     font-family: 'TeX Gyre Termes', serif; /* Cambia a una fuente similar a LaTeX */
-    font-size: 0.6em;
     font-weight: bold;
     line-height: 1;
 }
@@ -2453,10 +2471,6 @@ button {
     border-top: 1px solid #ccc; /* Línea de grosor 0.5mm */
     margin-top: 5px;
     width: 100%; /* Ajusta el ancho según necesites */
-}
-
-.content {
-    padding: 0; /* Sin espaciado interno */
 }
 
 .footer {
@@ -2481,7 +2495,7 @@ button {
 .article-container .content h1,
 .article-container .content h2,
 .article-container .content h3 {
-    font-size: 1.2rem; /* Ajusta el tamaño de los encabezados según sea necesario */
+    font-size: 24pt; /* Ajusta el tamaño de los encabezados según sea necesario */
 }
 
 .page:hover {
@@ -2496,11 +2510,26 @@ button {
     .page {
         transition: transform 1.5s ease-in-out;
    	transform-origin: center;
-	font-size: 12px !important;
     }
     .page:hover {
     	transform: scale(1.10); /* Hace que la página se agrande un % al pasar el mouse */
     	z-index: 1; /* Eleva la página por encima de otras al hacer hover */
  	}
+
+    .article-container p {
+        font-size: 0.9rem; /* Ajusta el tamaño para dispositivos móviles */
+    }
+
+    .article-container h1 {
+        font-size: 1.8rem; /* Tamaño para h1 en móviles */
+    }
+
+    .article-container h2 {
+        font-size: 1.3rem; /* Tamaño para h2 en móviles */
+    }
+
+    .article-container h3 {
+        font-size: 1.1rem; /* Tamaño para h3 en móviles */
+    }
 }
 }
