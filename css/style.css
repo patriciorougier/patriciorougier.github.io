@@ -47,6 +47,7 @@ html {
   /* 3 */
   font-family: 'TeX Gyre Termes', serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 /*
@@ -58,6 +59,7 @@ body {
     font-family: 'TeX Gyre Termes', serif; /* Cambia a una fuente similar a LaTeX */
     line-height: 1.5; /* Espaciado para mejorar la legibilidad */
     margin: 0; /* Añade márgenes al cuerpo */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
 /*
@@ -2486,39 +2488,45 @@ button {
     transform: scale(1.20); /* Hace que la página se agrande un 20% al pasar el mouse */
     z-index: 1; /* Eleva la página por encima de otras al hacer hover */
 }
-/* Media queries para pantallas pequeñas */
+/* Para dispositivos móviles */
 @media (max-width: 768px) {
-    .article-container {
-        flex-direction: column; /* Coloca las columnas en una sola columna */
-        margin: 10px;
+    body {
+        font-size: 14px; /* Reducir tamaño de la fuente */
     }
-
-    .column {
-        flex: 0 1 100%; /* Las columnas ocupan todo el ancho en pantallas pequeñas */
-        margin: 10px 0;
-    }
-
+    
     .page {
-        padding: 15px; /* Reducir el padding en pantallas pequeñas */
-    }
-
-    .page:hover {
-        transform: none; /* Desactivar la animación en pantallas pequeñas para evitar superposiciones */
-    }
-}
-
-@media (max-width: 480px) {
-    .page {
-        font-size: 14px; /* Reducir el tamaño de la fuente en pantallas muy pequeñas */
-        padding: 10px;
+        font-size: 14px; /* Ajustar tamaño de la fuente en el contenedor */
+        padding: 15px; /* Reducir el padding para optimizar el espacio */
     }
 
     .header h1, .header h2 {
-        font-size: 18px; /* Ajustar el tamaño de los encabezados */
+        font-size: 16px; /* Reducir tamaño de los encabezados */
     }
 
-    .content p {
-        word-wrap: break-word; /* Asegura que las palabras largas se ajusten al ancho de la pantalla */
+    .content p, .content h3 {
+        font-size: 14px; /* Tamaño adecuado para contenido */
+        word-wrap: break-word; /* Romper palabras largas para evitar desbordamiento */
+    }
+    
+    .article-container {
+        margin: 10px; /* Reducir márgenes generales */
+    }
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 480px) {
+    .page {
+        font-size: 12px; /* Reducir aún más el tamaño de la fuente */
+        padding: 10px; /* Reducir padding */
+    }
+    
+    .header h1, .header h2 {
+        font-size: 14px; /* Ajustar encabezados */
+    }
+
+    .content p, .content h3 {
+        font-size: 12px; /* Tamaño menor de fuente para contenido */
+        overflow-wrap: break-word; /* Asegura que el texto se ajuste */
     }
 }
 }
