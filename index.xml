@@ -2,17 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Patricio Rougier</title>
-    <link>https://patriciorougier.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Patricio Rougier</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="https://patriciorougier.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Nov 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title></title>
-      <link>https://patriciorougier.github.io/post/tp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://patriciorougier.github.io/post/tp/</guid>
-      <description>&lt;p&gt;::: titlepage&#xA;:::&lt;/p&gt;&#xA;&lt;h1 id=&#34;análisis-de-mallas-y-de-nodos&#34; class=&#34;unnumbered&#34;&gt;Análisis de Mallas y de Nodos&lt;/h1&gt;&#xA;&lt;h2 id=&#34;preguntas-teóricas&#34; class=&#34;unnumbered&#34;&gt;Preguntas Teóricas&lt;/h2&gt;&#xA;&lt;p&gt;1. ¿En qué consiste el análisis de mallas? ¿Cuál es el principio que se&#xA;aplica en este método? &lt;strong&gt;Respuesta:&lt;/strong&gt; Consiste en aplicar la Ley de&#xA;Kirchhoff de las Tensiones (LKT) para escribir ecuaciones en función de&#xA;las corrientes en cada malla.&lt;/p&gt;&#xA;&lt;p&gt;2. ¿Cuál es la diferencia entre el análisis de nodos y el análisis de&#xA;mallas? &lt;strong&gt;Respuesta:&lt;/strong&gt; El análisis de nodos aplica la Ley de Kirchhoff&#xA;de las Corrientes (LKC) en cada nodo, mientras que el de mallas utiliza&#xA;la LKT en cada lazo o malla.&lt;/p&gt;</description>
+      <title>Example: Circuit exercises</title>
+      <link>http://localhost:1313/post/tp/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/tp/</guid>
+      <description>&lt;h1 id=&#34;mi-artículo-con-latex&#34;&gt;Mi artículo con LaTeX&lt;/h1&gt;&#xA;&lt;p&gt;Aquí hay una fórmula matemática en línea:  $E = mc^2$&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Y aquí una fórmula en bloque:&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;$$&#xA;\int_{0}^{\infty} e^{-x^2} , dx = \frac{\sqrt{\pi}}{2}&#xA;$$&#xA;$$&#xA;\int_{0}^{\infty} e^{-x^2} , dx = \frac{\sqrt{\pi}}{2}&#xA;$$&#xA;$$&#xA;\int_{0}^{\infty} e^{-x^2} , dx = \frac{\sqrt{\pi}}{2}&#xA;$$&#xA;$$&#xA;\int_{0}^{\infty} e^{-x^2} , dx = \frac{\sqrt{\pi}}{2}&#xA;$$&#xA;$$&#xA;\int_{0}^{\infty} e^{-x^2} , dx = \frac{\sqrt{\pi}}{2}&#xA;$$&#xA;$$&#xA;\int_{0}^{\infty} e^{-x^2} , dx = \frac{\sqrt{\pi}}{2}&#xA;$$&#xA;$$&#xA;\int_{0}^{\infty} e^{-x^2} , dx = \frac{\sqrt{\pi}}{2}&#xA;$$&#xA;$$&#xA;\int_{0}^{\infty} e^{-x^2} , dx = \frac{\sqrt{\pi}}{2}&#xA;$$&#xA;$$&#xA;\int_{0}^{\infty} e^{-x^2} , dx = \frac{\sqrt{\pi}}{2}&#xA;$$&#xA;$$&#xA;\int_{0}^{\infty} e^{-x^2} , dx = \frac{\sqrt{\pi}}{2}&#xA;$$&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

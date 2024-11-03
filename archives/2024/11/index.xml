@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2024/11 on Patricio Rougier</title>
+    <link>http://localhost:1313/archives/2024/11/</link>
+    <description>Recent content in 2024/11 on Patricio Rougier</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/archives/2024/11/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Circuit Exercises</title>
+      <link>http://localhost:1313/post/tp/</link>
+      <pubDate>Sun, 11 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/tp/</guid>
+      <description>&lt;h1 id=&#34;análisis-de-mallas-y-de-nodos&#34; class=&#34;unnumbered&#34;&gt;Análisis de Mallas y de Nodos&lt;/h1&gt;&#xA;&lt;h2 id=&#34;preguntas-teóricas&#34; class=&#34;unnumbered&#34;&gt;Preguntas Teóricas&lt;/h2&gt;&#xA;&lt;p&gt;1. ¿En qué consiste el análisis de mallas? ¿Cuál es el principio que se&#xA;aplica en este método? &lt;strong&gt;Respuesta:&lt;/strong&gt; Consiste en aplicar la Ley de&#xA;Kirchhoff de las Tensiones (LKT) para escribir ecuaciones en función de&#xA;las corrientes en cada malla.&lt;/p&gt;&#xA;&lt;p&gt;2. ¿Cuál es la diferencia entre el análisis de nodos y el análisis de&#xA;mallas? &lt;strong&gt;Respuesta:&lt;/strong&gt; El análisis de nodos aplica la Ley de Kirchhoff&#xA;de las Corrientes (LKC) en cada nodo, mientras que el de mallas utiliza&#xA;la LKT en cada lazo o malla.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

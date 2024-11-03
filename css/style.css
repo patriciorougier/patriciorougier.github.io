@@ -7,9 +7,12 @@
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=TeX+Gyre+Termes:wght@400;700&display=swap');
+
 *,
 ::before,
 ::after {
+  font-family: inherit; /* Hereda de body */
   box-sizing: border-box;
   /* 1 */
   border-width: 0;
@@ -42,20 +45,19 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: 'TeX Gyre Termes', serif, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
 }
 
 /*
-1. Remove the margin in all browsers.
+1. Remove the margin in all browsers.}
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
 
 body {
-  margin: 0;
-  /* 1 */
-  line-height: inherit;
-  /* 2 */
+    font-family: 'TeX Gyre Termes', serif; /* Cambia a una fuente similar a LaTeX */
+    line-height: 1.5; /* Espaciado para mejorar la legibilidad */
+    margin: 0; /* Añade márgenes al cuerpo */
 }
 
 /*
@@ -86,14 +88,9 @@ abbr:where([title]) {
 Remove the default font size and weight for headings.
 */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'TeX Gyre Termes', serif; /* Usa la misma fuente para los encabezados */
+    margin-bottom: 1em; /* Espaciado entre encabezados y el texto siguiente */
 }
 
 /*
@@ -113,6 +110,10 @@ b,
 strong {
   font-weight: bolder;
 }
+p {
+    margin: 0.5em 0; /* Espaciado entre párrafos */
+    font-family: 'TeX Gyre Termes', serif; /* Cambia a una fuente similar a LaTeX */
+}
 
 /*
 1. Use the user's configured `mono` font family by default.
@@ -125,7 +126,7 @@ samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
-  font-size: 1em;
+  font-size: 14px;
   /* 2 */
 }
 
@@ -197,6 +198,7 @@ textarea {
   /* 2 */
   padding: 0;
   /* 3 */
+
 }
 
 /*
@@ -206,6 +208,7 @@ Remove the inheritance of text transform in Edge and Firefox.
 button,
 select {
   text-transform: none;
+
 }
 
 /*
@@ -321,10 +324,12 @@ pre {
 fieldset {
   margin: 0;
   padding: 0;
+
 }
 
 legend {
   padding: 0;
+
 }
 
 ol,
@@ -333,6 +338,7 @@ menu {
   list-style: none;
   margin: 0;
   padding: 0;
+  
 }
 
 /*
@@ -2352,4 +2358,116 @@ video {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+}
+
+
+/* Estilo para ecuaciones de MathJax */
+.MathJax {
+    font-family: 'TeX Gyre Termes', serif; /* Cambia a una fuente similar a LaTeX */
+}
+
+/* Estilo para listas */
+ul, ol {
+    margin: 1em 0; /* Espaciado para listas */
+    padding-left: 2em; /* Sangría en listas */
+    font-family: 'TeX Gyre Termes', serif; /* Cambia a una fuente similar a LaTeX */
+}
+
+/* Estilo para tablas */
+table {
+    border-collapse: collapse; /* Sin espacio entre bordes */
+    width: 100%; /* Tabla ocupa el ancho completo */
+    margin: 1em 0; /* Espaciado para las tablas */
+}
+
+th, td {
+    border: 1px solid #ccc; /* Bordes de las celdas */
+    padding: 0.5em; /* Espaciado dentro de las celdas */
+    text-align: left; /* Alinear texto a la izquierda */
+}
+
+/* Botones */
+button {
+    font-family: 'TeX Gyre Termes', serif; /* Mantener consistencia en la fuente */
+}
+
+/* Cambia el ancho del contenedor principal */
+.container {
+    max-width: 2480.3149606299px; /* Cambia 800px al ancho que desees */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 20px; /* Añade un poco de espacio interno */
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+        padding: 10px; /* Menos espacio interno */
+    }
+
+}
+
+.article-body {
+    min-height: 100vh; /* Se asegura de que el contenedor tenga al menos la altura de la ventana */
+}
+
+
+.article-container {
+    width: 100%;
+    max-width: 21cm; /* Ancho de una hoja A4 */
+    margin: 0; /* Eliminar el margen automático para centrar */
+    padding-left: 0; /* Añadir un margen izquierdo para desplazarlo */
+}
+
+.page {
+    width: 100%;
+    height: 29.7cm; /* Alto de una hoja A4 */
+    margin: 0; /* Eliminar el margen externo */
+    padding: 1.5cm; /* Márgenes internos */
+    border: 1px solid #ccc; /* Borde del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para efecto de profundidad */
+    position: relative; /* Para el pie de página */
+    page-break-after: always; /* Salto de página después de cada sección */
+    margin-bottom: 40px; /* Ajusta el valor según el espacio que desees */
+}
+
+.custom-header {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.header-text {
+    font-family: 'TeX Gyre Termes', serif; /* Cambia a una fuente similar a LaTeX */
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header-line {
+    margin: 0;
+}
+
+.separator-line {
+    border-top: 2px solid white; /* Línea de grosor 0.5mm */
+    margin-top: 5px;
+    width: 100%; /* Ajusta el ancho según necesites */
+}
+
+.content {
+    padding: 0; /* Sin espaciado interno */
+}
+
+.footer {
+    text-align: center; /* Centra el texto en el pie de página */
+    position: absolute; /* Posiciona el pie en la parte inferior */
+    bottom: 15px; /* Espacio desde el fondo */
+    left: 0;
+    right: 0;
+}
+
+.section {
+    margin-bottom: 1.5cm; /* Espacio entre secciones */
+}
+
+.page-number {
+    font-weight: bold; /* Para hacer que el texto en el footer funcione */
+}
 }
