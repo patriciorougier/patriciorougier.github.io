@@ -2394,26 +2394,25 @@ button {
 }
 
 /* Cambia el ancho del contenedor principal */
+
 .container {
-    max-width: 2480.3149606299px; /* Cambia 800px al ancho que desees */
     margin: 0 auto; /* Centra el contenedor */
     padding: 20px; /* Añade un poco de espacio interno */
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-@media (max-width: 600px) {
-    .container {
-        max-width: 100%; /* Ancho completo en pantallas pequeñas */
-        padding: 10px; /* Menos espacio interno */
-    }
-
+.article-container {
+    display: flex;
+    flex-direction: column; /* Asegura que las páginas se apilen verticalmente */
+    width: 100%;
 }
 
 .article-body {
     min-height: 100vh; /* Se asegura de que el contenedor tenga al menos la altura de la ventana */
-}
-
-/* Cambiar el tamaño de la fuente de los párrafos en el contenido de Markdown */
-.article-container p {
-    font-size: 14pt; /* Ajusta este valor según sea necesario */
 }
 
 /* Cambiar el tamaño de la fuente de los encabezados */
@@ -2432,39 +2431,51 @@ button {
 /* También puedes ajustar otros elementos, como listas, citas, etc. */
 .article-container ul,
 .article-container ol {
-    font-size: 13pt; /* Tamaño para listas */
+    font-size: 11pt; /* Tamaño para listas */
 }
 
 .page {
-    width: 100%;
+    width: 21cm;
     height: 29.7cm; /* Alto de una hoja A4 */
-    margin: 0; /* Eliminar el margen externo */
-    font-size: 14pt;
+    margin: 1cm  auto; /* Eliminar el margen externo */
     padding: 1.5cm; /* Márgenes internos */
     border: 1px solid #ccc; /* Borde del contenedor */
     box-shadow: 0 0 40px rgba(0, 0, 0, 8); /* Sombra para efecto de profundidad */ /* Para el pie de página */
-    page-break-after: always; /* Salto de página después de cada sección */
-    margin-bottom: 30px; /* Ajusta el valor según el espacio que desees */
-    -moz-column-count: 2;
-         column-count: 2; /* Divide el contenido en dos columnas */
-    -moz-column-gap: 25px;
-         column-gap: 25px; /* Espacio entre las columnas */
     background-color: rgb(12 10 9);
-    transition: transform 1.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     transform-origin: left; /* Controla desde dónde se expande la página */
     position: relative;
     z-index: 0; /* Asegura que la página esté en un nivel base */
+    page-break-after: always; /* Crea una nueva página después de cada .page */
+    display: flex; 
+    flex-direction: column; /* Para organizar el contenido verticalmente */
 }
+
+.article-body {
+    overflow: auto; /* Permite que el contenido se desplace si excede el tamaño */
+    flex-grow: 1; /* Permitir que el cuerpo del artículo crezca */
+}
+
+.footer {
+            position: absolute; /* Mantiene el pie de página en la parte inferior */
+            bottom: 10mm; /* Espacio desde la parte inferior */
+            left: 20mm; /* Espacio desde el borde izquierdo */
+            right: 20mm; /* Espacio desde el borde derecho */
+            text-align: center; /* Centra el texto */
+            font-size: 13pt; /* Tamaño de la fuente para el pie de página */
+            color: #666; /* Color del texto */
+        }
 
 .custom-header {
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .header-text {
     font-family: 'TeX Gyre Termes', serif; /* Cambia a una fuente similar a LaTeX */
     font-weight: bold;
     line-height: 1;
+    font-size: 12pt;
 }
 
 .separator-line {
@@ -2473,34 +2484,21 @@ button {
     width: 100%; /* Ajusta el ancho según necesites */
 }
 
-.footer {
-    text-align: center; /* Centra el texto en el pie de página */
-    position: absolute; /* Posiciona el pie en la parte inferior */
-    bottom: 20px; /* Espacio desde el fondo */
-    left: 0;
-    right: 0;
-}
-
-.section {
-    margin-bottom: 1.5cm; /* Espacio entre secciones */
-}
-
-.page-number {
-    font-weight: bold; /* Para hacer que el texto en el footer funcione */
-}
-.article-container .content {
-    font-size: 0.9rem; /* Ajusta el tamaño de la fuente según sea necesario */
-}
-
-.article-container .content h1,
-.article-container .content h2,
-.article-container .content h3 {
-    font-size: 24pt; /* Ajusta el tamaño de los encabezados según sea necesario */
-}
-
 .page:hover {
     transform: scale(1.20); /* Hace que la página se agrande un 20% al pasar el mouse */
     z-index: 1; /* Eleva la página por encima de otras al hacer hover */
+}
+
+.content {
+    white-space: normal; /* Permitir el ajuste de línea */
+    overflow-wrap: break-word; /* Romper palabras largas */
+    -moz-column-count: 2;
+         column-count: 2;
+    page-break-after: always; /* Salto de página después de cada sección */
+    margin-bottom: 20px; /* Ajusta el valor según el espacio que desees */
+    font-size: 11.5pt;
+    line-height: 1.5;
+    font-family: 'TeX Gyre Termes', serif; /* Mantener consistencia en la fuente */
 }
 
 /* Para dispositivos móviles */
@@ -2508,34 +2506,17 @@ button {
 
 @media only screen and (max-width: 768px) {
     .page {
-        transition: transform 1.5s ease-in-out;
-   	transform-origin: center;
+        /* Elimina el zoom y las animaciones en móviles */
+        transform: none;
+        transition: none;
     }
+
     .page:hover {
-    	transform: scale(1.10); /* Hace que la página se agrande un % al pasar el mouse */
-    	z-index: 1; /* Eleva la página por encima de otras al hacer hover */
- 	}
-
-    .article-container p {
-        font-size: 0.7rem; /* Ajusta el tamaño para dispositivos móviles */
+        /* Evita que se active cualquier efecto de hover en móviles */
+        transform: none;
     }
-
-    .article-container h1 {
-        font-size: 0.7rem; /* Tamaño para h1 en móviles */
-    }
-
-    .article-container h2 {
-        font-size: 0.8rem; /* Tamaño para h2 en móviles */
-    }
-
-    .article-container h3 {
-        font-size: 0.9rem; /* Tamaño para h3 en móviles */
-    }
-    .post-content p,
-    .post-content h1,
-    .post-content h2,
-    .post-content h3 {
-        font-size: 0.5rem; /* Ajusta este valor según sea necesario */
-    }
+	* {
+        	animation: none !important;
+        	transition: none !important;
 }
 }
