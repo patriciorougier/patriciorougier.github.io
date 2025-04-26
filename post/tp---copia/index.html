@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css2?family=TeX+Gyre+Termes&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript">
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']],
+                packages: {'[+]': ['ams']},
+            },
+            chtml: {
+                scale: 1,
+                displayAlign: 'center',
+                displayIndent: '0'
+            }
+        };
+    </script>
+    
+    <script type="text/javascript" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <style>
+        body {
+            font-family: 'TeX Gyre Termes', serif;  
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         
+        a {
+            color: blue;
+            text-decoration: none;  
+            transition: transform 0.4s ease;  
+            display: inline-block;  
+        }
+
+         
+        a:hover {
+            transform: scale(1.02);
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href='/favicon/apple-touch-icon.png'>
+    <link rel="icon" type="image/png" sizes="32x32" href='/favicon/favicon-32x32.png'>
+    <link rel="icon" type="image/png" sizes="16x16" href='/favicon/favicon-16x16.png'>
+    <link rel="manifest" href='/favicon/site.webmanifest' />
+    <link rel="mask-icon" href=' /favicon/safari-pinned-tab.svg' color="#5bbad5" />
+    <link rel="shortcut icon" href='/favicon/favicon.ico' />
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Patricio Rougier | Example: Circuit exercises" />
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    
+    <link href=' /css/blonde.min.css' rel="stylesheet" type="text/css" media="print"
+        onload="this.media=' all'">
+    
+
+
+
+<meta name="description" content="colapinto">
+<meta property="og:site_name" content="Patricio Rougier">
+<meta property="og:description" content="colapinto">
+<meta property="og:url" content="http://localhost:1313/post/tp---copia/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="">
+
+<link rel="canonical" href="http://localhost:1313/post/tp---copia/">
+
+<meta name="twitter:description" content="colapinto">
+<meta property="article:published_time" content="2024-11-02T00:00:00&#43;00:00">
+<meta property="article:updated_time" content="2024-11-02T00:00:00&#43;00:00">
+
+
+
+
+
+    
+<meta property="og:image" content="http://localhost:1313/img/images.jpg">
+<meta property="og:image:url" content="http://localhost:1313/img/images.jpg">
+    
+
+    
+    <link rel="stylesheet" href='/css/custom.css'>
+    <i class="dark hidden"></i>
+</head>
+<body class="font-sans">
+    <div class="min-h-screen flex flex-col bg-gray-100 dark:bg-warmgray-800"><div class="bg-gray-800">
+    <div class="container max-w-screen-xl mr-auto ml-auto">
+        <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6">
+            <div class="flex items-center flex-no-shrink bg-gray-800 text-white mr-6">
+                <a href="http://localhost:1313/"><span class="font-semibold text-2xl tracking-tight">Patricio Rougier</span></a>
+            </div>
+            <div class="flex md:hidden">
+                <div class="py-2">
+                    <button onclick="toggleDarkMode()" class="focus:outline-none mr-1" aria-label="Darkmode Toggle Button"><i id="icon"
+                            class="icon-moon inline-flex align-middle leading-normal text-lg text-white"></i></button>
+                    <span class="text-white">|</span>
+                </div>
+                <button id="hamburgerbtn" class="flex items-center px-3 py-1 text-white hover:opacity-50" aria-label="Hamburger Button">
+                    <span class="icon-menu text-2xl"></span>
+                </button>
+            </div>
+            <div class="hidden w-full md:flex md:flex-row sm:items-center md:w-auto" id="mobileMenu">
+                <div class="text-sm lg:flex-grow">
+                </div>
+                <div class="navmenu">
+                    
+                    <a href="/"
+                        class="no-underline duration-200 block mt-4 sm:inline-block sm:mt-0 text-white hover:opacity-50 mr-4">
+                        Home
+                    </a>
+                    
+                </div>
+                <div class="text-white invisible md:visible">
+                    <span>|</span>
+                    <button onclick="toggleDarkMode()" class="focus-visible:outline-none" aria-label="Darkmode Toggle Button"><i id="icon2"
+                            class="icon-moon hover:opacity-50 duration-200 inline-flex align-middle leading-normal text-lg ml-2"></i></button>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<style>
+    .active {
+        display: block;
+    }
+</style>
+
+<script>
+    let hamburger = document.getElementById('hamburgerbtn');
+
+    let mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', function () {
+        mobileMenu.classList.toggle('active');
+    });
+</script>
+<div class="container max-w-screen-xl mx-auto mt-4 flex-grow px-5 lg:px-0" id="content">
+            <div class="lg:mx-5">
+<div class="grid grid-cols-3 gap-4">
+  
+  <div class="col-span-3 lg:col-span-2 dark:text-white">
+    
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+        <h1 class="mb-2 text-4xl font-bold">Example: Circuit exercises</h1>
+        <aside id="meta">
+          <div>
+            <section>
+              <h4 id="date"><span class="icon-access_time mr-2"></span>2024/11/02
+              </h4>
+            </section>
+            
+          </div>
+        </aside>
+        
+        <img class="py-4" src="http://localhost:1313/img/images.jpg">
+        
+        
+        <div class="prose md:prose-lg lg:prose-xl max-w-none dark:prose-invert mt-5">
+	<div class="container">
+	<div class="article-container">
+    
+
+
+
+
+    <div class="page">
+        <div class="custom-header">
+            <div class="header-text">
+                <strong>
+                    <div class="header-line">Clase Particular:</div>
+                    <div class="header-line">Análisis de mallas y de nodos</div>
+                </strong>
+            </div>
+            <div class="separator-line"></div>
+        </div>
+        <div class="content">
+            <div class="section">
+                <p>La curiosidad es una de las características más distintivas del ser humano. Desde los primeros años de vida, el impulso de explorar, cuestionar y descubrir se manifiesta de diversas maneras. Los niños, en particular, son ejemplos paradigmáticos de este fenómeno, ya que muestran un deseo insaciable de aprender sobre el mundo que los rodea. Desde hacer preguntas aparentemente simples como &ldquo;¿por qué el cielo es azul?&rdquo; hasta realizar experimentos ingeniosos en su entorno, la curiosidad es el motor que impulsa la adquisición de conocimientos. Sin embargo, a medida que crecemos y nos adentramos en sistemas educativos más formales, esta curiosidad innata a menudo se ve restringida por estructuras que priorizan la memorización sobre la exploración.</p>
+<p>La Curiosidad en la Educación</p>
+<p>En el ámbito educativo, la curiosidad juega un papel crucial en el proceso de aprendizaje. Un entorno que fomenta preguntas abiertas y la exploración de ideas permite a los estudiantes desarrollar habilidades de pensamiento crítico. Cuando los educadores alientan a los alumnos a cuestionar los conceptos y a buscar respuestas más allá de la superficie, están promoviendo un aprendizaje profundo que va más allá de la mera acumulación de información.</p>
+<p>Por ejemplo, en las ciencias, un estudiante que se pregunta &ldquo;¿cómo funciona la gravedad?&rdquo; no solo está aprendiendo una ley física, sino que también está desarrollando un marco conceptual que puede aplicar a otras áreas. Esta curiosidad puede llevar a experimentos que revelen principios fundamentales, como el hecho de que la gravedad afecta a todos los objetos de manera uniforme, independientemente de su masa. Aquí, la curiosidad no solo alimenta el conocimiento, sino que también estimula la creatividad, permitiendo a los estudiantes formular nuevas ideas y teorías.</p>
+<p>La Conexión entre Curiosidad y Creatividad</p>
+<p>La curiosidad y la creatividad están intrínsecamente relacionadas. La curiosidad nos impulsa a explorar lo desconocido, lo que puede llevar a descubrimientos innovadores. La creatividad, a su vez, permite que esas exploraciones se conviertan en soluciones prácticas y originales a problemas complejos. Por ejemplo, muchos inventos y avances científicos han surgido de un momento de curiosidad: la invención de la penicilina por Alexander Fleming, que ocurrió cuando se preguntó por qué un hongo había matado a las bacterias en su placa de cultivo, es solo uno de los muchos ejemplos en la historia.</p>
+<p>La curiosidad también ayuda a superar la complacencia. En un mundo en constante evolución, donde los desafíos y las oportunidades cambian rápidamente, aquellos que cultivan su curiosidad tienen más probabilidades de adaptarse y prosperar. Esto es especialmente importante en el contexto laboral, donde las habilidades requeridas están en continua transformación. Un empleado curioso es más propenso a aprender nuevas habilidades, buscar formación adicional y contribuir a la innovación dentro de su organización.</p>
+<p>Curiosidad en la Vida Cotidiana</p>
+<p>La curiosidad no se limita al ámbito académico o profesional; también es un componente esencial de nuestra vida cotidiana. Fomenta relaciones más profundas, ya que nos lleva a aprender sobre los demás y a comprender sus perspectivas. Al hacer preguntas y mostrar interés genuino en las experiencias de los demás, creamos conexiones significativas que enriquecen nuestras vidas.</p>
+<p>Además, la curiosidad puede ser una fuente de motivación personal. Aquellos que buscan constantemente nuevas experiencias y conocimientos suelen llevar una vida más rica y satisfactoria. Viajar, leer libros, asistir a conferencias o simplemente explorar nuevos hobbies son maneras en que la curiosidad puede influir positivamente en nuestro bienestar general.</p>
+
+            </div>
+        </div>
+        <div class="footer">
+            Página <span class="page-number">1</span>
+        </div>
+    </div>    
+
+
+
+
+
+	</div>
+	</div>
+	</div>
+
+        
+        <aside id="meta">
+          
+        </aside>
+      </div>
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+        <div class="grid grid-cols-2">
+          <div class="col-span-1">
+            
+            <a class="previous lg:text-2xl" href="http://localhost:1313/post/tp/">
+              <div
+                class="transition-colors duration-300 border border-gray-600 hover:border-black h-auto m-3 text-center py-3 lg:py-1">
+                <span class="icon-keyboard_arrow_left"></span> Example: Circuit exercises
+              </div>
+            </a>
+            
+          </div>
+          
+        </div>
+      </div>
+      <div class="bg-white dark:bg-warmgray-900 p-5 my-4">
+        <div class="mb-3">
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="hidden lg:block lg:col-span-1">
+    
+    
+            
+            
+
+<div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-5 dark:text-gray-300 font-bold">Recent Posts</p>
+    <div class="mx-6">
+        <a href="/post/tp---copia/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Example: Circuit exercises</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2024/11/02</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/tp/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Example: Circuit exercises</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2024/11/02</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+        <a href="/post/tp2/" class="">
+            <div
+                class="w-full block mt-3 bg-white hover:bg-gray-100 duration-200 dark:bg-warmgray-900 dark:text-gray-200 dark:hover:bg-warmgray-800">
+                <div class="px-2">
+                    <div class="text-gray-900 font-bold text-xl dark:text-white">Example: Circuit exercises</div>
+                    <p class="text-sm text-gray-600 flex items-center pb-1 dark:text-gray-400">
+                        <time><span class="icon-access_time mr-1"></span>2024/11/02</time>
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+        
+            
+            <div class="bg-white panel mb-3 pb-5 dark:bg-warmgray-900">
+    <p class="text-xl text-center text-gray-700 py-3 px-3 dark:text-gray-300 font-bold">Archives</p>
+    
+    
+    <a class="text-center block duration-100 py-2 px-4 mx-4 hover:bg-gray-100 text-gray-800 dark:text-gray-200 dark:hover:bg-warmgray-800"
+        href="http://localhost:1313//archives/2024/03">2024/03 (3)</a>
+    
+    
+</div>
+        
+            
+            
+        
+            
+            
+
+        
+            
+            <div class="mb-3">
+    <form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+        <label>
+            <input class="w-full p-3 focus:outline-none dark:bg-warmgray-900 dark:text-white placeholder-gray-700 dark:placeholder-gray-300" type="search"
+                placeholder="Search..." value="" name="q" aria-label="Search">
+        </label>
+        <input class="hidden" type="submit" value="Search">
+        <input type="hidden" name="sitesearch" value="http://localhost:1313/" />
+    </form>
+</div>
+        
+    
+</div>
+    
+  </div>
+</div>
+
+            </div>
+        </div><footer class="bg-gray-800 text-white p-6">
+  
+  <div class="container max-w-screen-xl mr-auto ml-auto">
+    <p>&copy; 2024 <a href="http://localhost:1313/" class="duration-200 hover:opacity-50">Patricio Rougier</a>
+    </p>
+    <p>Powered by <a href="https://gohugo.io/" class="duration-200 hover:opacity-50">Hugo</a>, Theme <a
+        href="https://github.com/opera7133/Blonde" class="duration-200 hover:opacity-50">Blonde</a>.</p>
+  </div>
+  
+  <script>
+    var icon = document.getElementById("icon");
+    var icon2 = document.getElementById("icon2");
+    
+    if (document.documentElement.classList.contains("dark") || localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      icon.classList.remove("icon-moon");
+      icon.classList.add("icon-sun");
+      icon2.classList.remove("icon-moon");
+      icon2.classList.add("icon-sun");
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+    function toggleDarkMode() {
+      if (document.documentElement.classList.contains('dark')) {
+        icon.classList.remove("icon-sun");
+        icon.classList.add("icon-moon");
+        icon2.classList.remove("icon-sun");
+        icon2.classList.add("icon-moon");
+        document.documentElement.classList.remove('dark')
+        localStorage.theme = 'light'
+      } else {
+        icon.classList.remove("icon-moon");
+        icon.classList.add("icon-sun");
+        icon2.classList.remove("icon-moon");
+        icon2.classList.add("icon-sun");
+        document.documentElement.classList.add('dark')
+        localStorage.theme = 'dark'
+      }
+    }
+  </script>
+</footer></div>
+</body>
+
+</html>
