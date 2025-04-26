@@ -9,12 +9,25 @@
     <lastBuildDate>Sat, 02 Nov 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://patriciorougier.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Angulo solido</title>
-      <link>https://patriciorougier.github.io/post/post1/</link>
+      <title>Example: Circuit exercises</title>
+      <link>https://patriciorougier.github.io/post/tp/</link>
       <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
       <guid>https://patriciorougier.github.io/post/tp/</guid>
-      <description>&lt;p&gt;Explico el concepto de angulo solido.&lt;/p&gt;</description>
+      <description>&lt;p&gt;La curiosidad es una de las características más distintivas del ser humano. Desde los primeros años de vida, el impulso de explorar, cuestionar y descubrir se manifiesta de diversas maneras. Los niños, en particular, son ejemplos paradigmáticos de este fenómeno, ya que muestran un deseo insaciable de aprender sobre el mundo que los rodea. Desde hacer preguntas aparentemente simples como &amp;ldquo;¿por qué el cielo es azul?&amp;rdquo; hasta realizar experimentos ingeniosos en su entorno, la curiosidad es el motor que impulsa la adquisición de conocimientos. Sin embargo, a medida que crecemos y nos adentramos en sistemas educativos más formales, esta curiosidad innata a menudo se ve restringida por estructuras que priorizan la memorización sobre la exploración.&lt;/p&gt;</description>
     </item>
-
+    <item>
+      <title>Example: Circuit exercises</title>
+      <link>https://patriciorougier.github.io/post/tp2/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://patriciorougier.github.io/post/tp2/</guid>
+      <description>&lt;p&gt;La curiosidad es una de las características más distintivas del ser humano. Desde los primeros años de vida, el impulso de explorar, cuestionar y descubrir se manifiesta de diversas maneras. Los niños, en particular, son ejemplos paradigmáticos de este fenómeno, ya que muestran un deseo insaciable de aprender sobre el mundo que los rodea. Desde hacer preguntas aparentemente simples como ¿por qué el cielo es azul? hasta realizar experimentos ingeniosos en su entorno, la curiosidad es el motor que impulsa la adquisición de conocimientos. Sin embargo, a medida que crecemos y nos adentramos en sistemas educativos más formales, esta curiosidad innata a menudo se ve restringida por estructuras que priorizan la memorización sobre la exploración.&#xA;La Curiosidad en la Educación&#xA;En el ámbito educativo, la curiosidad juega un papel crucial en el proceso de aprendizaje. Un entorno que fomenta preguntas abiertas y la exploración de ideas permite a los estudiantes desarrollar habilidades de pensamiento crítico. Cuando los educadores alientan a los alumnos a cuestionar los conceptos y a buscar respuestas más allá de la superficie, están promoviendo un aprendizaje profundo que va más allá de la mera acumulación de información.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Example: Circuit exercises</title>
+      <link>https://patriciorougier.github.io/post/tp3/</link>
+      <pubDate>Sat, 02 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>https://patriciorougier.github.io/post/tp3/</guid>
+      <description>&lt;p&gt;La curiosidad es una de las características más distintivas del ser humano. Desde los primeros años de vida, el impulso de explorar, cuestionar y descubrir se manifiesta de diversas maneras. Los niños, en particular, son ejemplos paradigmáticos de este fenómeno, ya que muestran un deseo insaciable de aprender sobre el mundo que los rodea. Desde hacer preguntas aparentemente simples como &amp;ldquo;¿por qué el cielo es azul?&amp;rdquo; hasta realizar experimentos ingeniosos en su entorno, la curiosidad es el motor que impulsa la adquisición de conocimientos. Sin embargo, a medida que crecemos y nos adentramos en sistemas educativos más formales, esta curiosidad innata a menudo se ve restringida por estructuras que priorizan la memorización sobre la exploración.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
