@@ -285,6 +285,12 @@ section button:hover, section .btn:hover {
     background-color: #5E674A;
 }
 
+.navbar-toggler {
+    border-color: #606C38; /* Borde del botón hamburguesa */
+    color: #FEFAE0;        /* Color del icono */
+    background-color: var(--color-link-hover);
+}
+
 /* ====== TARJETAS ====== */
 .container .single-post-card {
   background-color: #D8C8A3 !important;
@@ -372,4 +378,9 @@ body .single-post-card:hover {
 .note-card .card-footer {
   background-color: #A97458 !important; /* Fondo del footer */
   border-top: 1px solid #606C38; /* Borde superior */
+}
+
+.menu {
+  background-color: #1a1a1a; /* fondo oscuro */
+  z-index: 999;              /* para que esté encima de todo */
 }
