@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Virtual Garden</title>
+    <link>https://lightbi-beta-demo.netlify.app/tags/</link>
+    <description>Recent content in Tags on Virtual Garden</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <managingEditor>carlospatriciorougier9@gmail.com (Patricio Rougier)</managingEditor>
+    <webMaster>carlospatriciorougier9@gmail.com (Patricio Rougier)</webMaster>
+    <lastBuildDate>Sun, 08 Jun 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://lightbi-beta-demo.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ideas</title>
+      <link>https://lightbi-beta-demo.netlify.app/tags/ideas/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate><author>carlospatriciorougier9@gmail.com (Patricio Rougier)</author>
+      <guid>https://lightbi-beta-demo.netlify.app/tags/ideas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Notes</title>
+      <link>https://lightbi-beta-demo.netlify.app/tags/notes/</link>
+      <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate><author>carlospatriciorougier9@gmail.com (Patricio Rougier)</author>
+      <guid>https://lightbi-beta-demo.netlify.app/tags/notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blog</title>
+      <link>https://lightbi-beta-demo.netlify.app/tags/blog/</link>
+      <pubDate>Mon, 25 Dec 2023 00:00:00 +0000</pubDate><author>carlospatriciorougier9@gmail.com (Patricio Rougier)</author>
+      <guid>https://lightbi-beta-demo.netlify.app/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://lightbi-beta-demo.netlify.app/tags/hugo/</link>
+      <pubDate>Wed, 20 Dec 2023 00:00:00 +0000</pubDate><author>carlospatriciorougier9@gmail.com (Patricio Rougier)</author>
+      <guid>https://lightbi-beta-demo.netlify.app/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Shortcodes</title>
+      <link>https://lightbi-beta-demo.netlify.app/tags/shortcodes/</link>
+      <pubDate>Thu, 30 Nov 2023 00:00:00 +0000</pubDate><author>carlospatriciorougier9@gmail.com (Patricio Rougier)</author>
+      <guid>https://lightbi-beta-demo.netlify.app/tags/shortcodes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Netlify</title>
+      <link>https://lightbi-beta-demo.netlify.app/tags/netlify/</link>
+      <pubDate>Sat, 04 Nov 2023 00:00:00 +0000</pubDate><author>carlospatriciorougier9@gmail.com (Patricio Rougier)</author>
+      <guid>https://lightbi-beta-demo.netlify.app/tags/netlify/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Markdown</title>
+      <link>https://lightbi-beta-demo.netlify.app/tags/markdown/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate><author>carlospatriciorougier9@gmail.com (Patricio Rougier)</author>
+      <guid>https://lightbi-beta-demo.netlify.app/tags/markdown/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Syntax</title>
+      <link>https://lightbi-beta-demo.netlify.app/tags/syntax/</link>
+      <pubDate>Sat, 25 Jan 2020 00:00:00 +0000</pubDate><author>carlospatriciorougier9@gmail.com (Patricio Rougier)</author>
+      <guid>https://lightbi-beta-demo.netlify.app/tags/syntax/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Stoicism</title>
+      <link>https://lightbi-beta-demo.netlify.app/tags/stoicism/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate><author>carlospatriciorougier9@gmail.com (Patricio Rougier)</author>
+      <guid>https://lightbi-beta-demo.netlify.app/tags/stoicism/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
