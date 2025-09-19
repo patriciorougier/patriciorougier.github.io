@@ -288,7 +288,7 @@ section button:hover, section .btn:hover {
 .navbar-toggler {
     border-color: #606C38; /* Borde del botón hamburguesa */
     color: #FEFAE0;        /* Color del icono */
-    background-color: var(--color-heading-h2);
+    background-color: var(--color-heading-h2) !important; /* Fondo del botón */
 }
 
 /* ====== TARJETAS ====== */
