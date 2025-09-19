@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Acerca de on Virtual Garden</title>
-    <link>http://localhost:1313/about/</link>
+    <link>https://patriciorougier.github.io/about/</link>
     <description>Recent content in Acerca de on Virtual Garden</description>
     <generator>Hugo</generator>
     <language>es</language>
     <managingEditor>carlospatriciorougier9@gmail.com (Patricio Rougier)</managingEditor>
     <webMaster>carlospatriciorougier9@gmail.com (Patricio Rougier)</webMaster>
-    <atom:link href="http://localhost:1313/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://patriciorougier.github.io/about/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
