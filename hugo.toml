@@ -1,0 +1,87 @@
+baseURL = "https://patriciorougier.github.io/"
+defaultContentLanguage = "es"
+languageCode = "es"
+title = "Virtual Garden"
+theme = "lightbi-hugo"
+summaryLength  = "30"
+metaDataFormat = "yaml"
+pygmentsStyle = "trac"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClassic = true
+pygmentOptions = "linenos=inline"
+#googleAnalytics = "XXX"
+enableRobotsTXT = true
+enableGitInfo = false
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[Params]
+selfHosted = true
+mainSections = ["posts"]
+comments = false
+readingTime = true
+wordCount = true
+hideAuthor = false
+useHLJS = true
+socialShare = true
+delayDisqus = true
+showRelatedPosts = true 
+gcse = false
+Lastmod = true
+rss = true 
+pagination = "10"
+description="Your can add your website description here."
+lunrSearch = true
+previewCardImagePlacement = "top"
+hidePostImage = false
+tagSubtitle = "🔍 Esta sección es como un buscador exprés: vas a ver palabras clave sacadas de los posteos y notas que fui escribiendo. Cuando apretás alguna, ¡pum! se despliega una lista con todo lo que tengo en mi cuaderno relacionado a esa palabra. Ideal para chusmear rápido y encontrar lo que te interesa sin dar mil vueltas."
+homepageLayout = "profile"
+profileShortbio = "Me copa el mundo de la pagina web y me encanta mandarme a crear cosas ahí, por ejemplo todo esto. Este espacio es medio como un jardín digital, mi jardín digital: vas a encontrar desde reflexiones largas cuando me pinta pensar profundo, hasta notitas cortas tipo “che, mirá lo que aprendí hoy”. Todo mezclado con un poco de mi recorrido academico."
+profilePhoto = "img/profile/home-profile-pic.jpg"
+
+
+[pagination]
+pagerSize = 6
+
+[Params.Author]
+  name = "Patricio Rougier"
+  authorPostImage = "/img/author-post-img.jpg"
+  email = "carlospatriciorougier9@gmail.com"
+  instagram = "patricio.rougier"
+  linkedin = "patricio-rougier-146b90349"
+  github = "patriciorougier"
+  reddit = "ducky_punk"
+  paypal = "patriciorougier"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+
+
+[[menu.main]]
+    name = "Inicio"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+    name = "Posteos"
+    url = "/posts/"
+    weight = 3
+
+[[menu.main]]
+    name = "Cuaderno"
+    url = "/notes/"
+    weight = 2
+
+[[menu.main]]
+    name = "Categorias"
+    url = "/tags/"
+    weight = 6
+
+
+[[menu.main]]
+    name = "Acerca de"
+    url = "/about/"
+    weight = 4

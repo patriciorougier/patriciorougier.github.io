@@ -1,0 +1,386 @@
+/* ====== PALETA DE COLORES UNIFICADA ====== */
+:root {
+  --color-bg: #12180B;             /* Fondo principal */
+  --color-text: #FEFAE0;           /* Texto principal */
+  --color-heading-h1: #DDA15E;     /* Títulos h1 */
+  --color-heading-h2: #BC6C25;     /* Títulos h2 */
+  --color-link: #DDA15E;            /* Links */
+  --color-link-hover: #BC6C25;      /* Hover links */
+  --color-accent: #DDA15E;          /* Resaltados / subrayados */
+  --color-border: #BC6C25;          /* Bordes de cajas / tarjetas */
+  --color-code-bg: #606c38;         /* Fondo de código */
+  --color-code-text: #FEFAE0;       /* Texto de código */
+  --color-shadow: rgba(0,0,0,0.2);  /* Sombra ligera */
+  
+  --transition-speed: 0.3s;
+}
+
+html body div.container.fixed-top.mw-100 div.row.justify-content-center div.col-sm-12.col-md-12.col-lg-10.col-xl-10 nav.navbar.navbar-expand-lg.navbar-light.fixed-top.p-0 div.container a.navbar-brand.fw-bold {
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-heading-h1); /* Nuevo color del título */
+    font-weight: bold;
+}
+
+/* ====== TIPOGRAFÍA ====== */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman@4.5.12/index.min.css');
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-mono@4.5.12/index.min.css');
+
+/* Texto principal (lectura larga) */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  text-align: justify;
+}
+
+html body div.container div.row div.col-lg-8.offset-lg-2.col-md-10.offset-md-1.pt-4 {
+  width: 85%;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+}
+
+/* Opcional: más estilo a h1 y h2 */
+h1 {
+  font-size: 2.5rem;
+  color: var(--color-heading-h1);
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--color-heading-h2);
+}
+
+h3 { font-size: 1.5rem; 
+  color: var(--color-text); }
+
+h4, h5, h6 { color: var(--color-text); }
+
+/* ====== H1: línea completa ====== */
+h1 {
+  position: relative;
+  font-size: 2.5rem;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;       /* separación del texto */
+  left: 0;            /* empieza donde inicia el texto */
+  width: 100%;        /* largo fijo */
+  height: 3px;
+  background-color: var(--color-border);
+  border-radius: 2px;
+}
+
+/* ====== H2: línea de 40px ajustada al inicio del texto ====== */
+html body section div.container div.row.intro-header.mt-10.pb-5 div.col-sm-12.col-md-8.col-lg-8 {
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
+  display: inline-block;   /* ajusta el contenedor al texto */
+  position: relative;
+  font-size: 20px;
+}
+
+h2 {
+  color: var(--color-heading-h1);
+  display: inline-block;   /* ajusta el contenedor al texto */
+  position: relative;
+  font-size: 2rem;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;       /* separación del texto */
+  left: 0;            /* empieza donde inicia el texto */
+  width: 40px;        /* largo fijo */
+  height: 3px;
+  background-color: var(--color-border);
+  border-radius: 2px;
+}
+
+/* ====== ENLACES ====== */
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+  position: relative;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: width var(--transition-speed) ease;
+}
+
+a:hover::after { width: 100%; }
+
+/* ====== CÓDIGO ====== */
+code {
+  font-family: 'Latin Modern Mono', monospace !important;
+  font-size: 0.9em  !important;
+  background-color: var(--color-code-bg) !important;
+  color: var(--color-code-text) !important;
+  padding: 0.2em 0.4em !important;
+  border-radius: 3px !important;
+  border: 1px solid var(--color-border) !important;
+}
+
+pre {
+  font-family: 'Latin Modern Mono', monospace !important;
+  background-color: black !important;
+  color: var(--color-text) !important;
+  padding: 1.5rem !important;
+  border-radius: 8px !important;
+  overflow-x: auto !important;
+  border-left: 4px solid var(--color-accent) !important;
+  box-shadow: 0 4px 6px var(--color-shadow) !important;
+}
+
+pre code { 
+  background: none !important; 
+  padding: 0 !important; 
+  border: none !important; 
+  color: inherit !important; 
+}
+
+
+/* ====== BOTONES ====== */
+button, .read-more {
+  color: var(--color-text);
+  background-color: var(--color-accent);
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all var(--transition-speed) ease;
+}
+
+button:hover, .read-more:hover { background-color: var(--color-link-hover); transform: translateY(-2px); }
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #1A2310;  /* Fondo del footer actualizado */
+  border-top: 1px solid #606C38;
+  padding: 3rem 0;
+}
+
+footer a { color: var(--color-heading-h2); }
+footer a:hover { color: var(--color-link-hover); }
+
+.text-muted {
+  --bs-text-opacity: 1;
+  color: #ac3d01 !important;
+}
+
+/* ====== BLOQUES DE CITAS ====== */
+blockquote {
+  border-left: 5px solid var(--color-border);
+  padding-left: 2rem;
+  padding-right: 1rem;
+  font-style: italic;
+  color: var(--color-text);
+  background-color: rgba(0, 0, 0, 0.280);
+  border-radius: 0 8px 8px 0;
+}
+
+/* ====== TABLAS ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background-color: var(--color-card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td { padding: 1rem; border-bottom: 1px solid var(--color-border); }
+table th { background-color: var(--color-heading-h1); color: var(--color-bg); font-weight: 600; }
+table tr:nth-child(even) { background-color: var(--color-bg); }
+
+/* ====== IMÁGENES ====== */
+img { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px var(--color-shadow); transition: transform var(--transition-speed) ease; }
+img:hover { transform: scale(1.02); }
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .container, .container-profile, .page-container { padding: 0 1rem; }
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.3rem; }
+}
+
+/* ====== NAVEGADOR ====== */
+.navbar {
+  border-bottom: 1px solid #606C38; /* Borde inferior del navbar */
+}
+
+.navbar, .navbar .nav-link{
+  background-color: #1E2912; /* Fondo uniforme del navbar y dropdown */
+}
+
+.navbar .nav-link {
+  color: #FEFAE0; /* Texto principal del navbar */
+  transition: color var(--transition-speed) ease;
+}
+
+.navbar .nav-link:hover, 
+.navbar .nav-link.active {
+  color: #DDA15E; /* Texto activo o hover */
+}
+
+.navbar .dropdown-item {
+  color: #FEFAE0; /* Texto de dropdown */
+  transition: color var(--transition-speed) ease;
+}
+
+.navbar .dropdown-item:hover {
+  color: #DDA15E; /* Hover del dropdown */
+  background-color: rgba(254, 250, 224, 0.1); /* Sutil efecto de hover */
+}
+
+/* Título del sitio en navbar */
+.navbar .navbar-brand {
+  color: var(--color-heading-h1); /* Nuevo color del título */
+  font-weight: bold;
+}
+
+.navbar .navbar-brand:hover {
+  color: #BC6C25; /* Hover */
+}
+
+/* ====== SECCIONES UNIFICADAS ====== */
+.section-primary-bg, .bg-white {
+    background-color:#0B0F06; /* verde oscuro */
+    color: var(--color-text);          /* texto crema */
+}
+
+/* Botones dentro de secciones */
+section button, section .btn {
+    font-weight: bold ;
+    color: var(--color-bg);
+    background-color: #D8C8A3;
+}
+section button:hover, section .btn:hover {
+    background-color: #5E674A;
+}
+
+.navbar-toggler {
+    border-color: #606C38; /* Borde del botón hamburguesa */
+    color: #FEFAE0;        /* Color del icono */
+    background: var(--color-heading-h2) !important; /* Fondo del botón */
+}
+
+/* ====== TARJETAS ====== */
+.container .single-post-card {
+  background-color: #D8C8A3 !important;
+  color: #283618 !important;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 6px 16px rgba(0,0,0,.2);
+  transition: transform .3s ease, box-shadow .3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.single-post-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #C9C9AE, var(--color-bg)); /* degradado para resaltar */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* sombra sutil */
+}
+
+.container .single-post-card h3 {
+  color: var(--color-bg);
+  font-size: 1.7rem;
+}
+
+/* Hover */
+body .single-post-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.25);
+}
+
+/* ===== Tarjetas de notas ===== */
+.note-card {
+  background-color: #D8C8A3 !important;
+  padding: 0.2rem;
+  margin-bottom: 1rem;
+  transition: transform .3s ease, box-shadow .3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.note-card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 20px rgba(0,0,0,.2);
+}
+
+.note-card h3 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.note-card a {
+  color: var(--color-bg);
+  font-weight: bold;
+}
+
+.note-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #C9C9AE, var(--color-bg)); /* degradado para resaltar */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* sombra sutil */
+}
+
+/* Para cada bloque del acordeón de tags */
+.accordion-item {
+  background-color: #93987C; /* Fondo oscuro */
+  border: 1px solid #606C38; /* Borde */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.accordion-button {
+  background-color: #93987C; /* Fondo oscuro */
+  color: var(--color-bg);    /* Texto claro */
+  font-weight: bold;
+}
+
+.post-entry {
+  color: var(--color-text);
+}
+
+.note-card .card-footer {
+  background-color: #A97458 !important; /* Fondo del footer */
+  border-top: 1px solid #606C38; /* Borde superior */
+}
+
+.menu {
+  background-color: #1a1a1a; /* fondo oscuro */
+  z-index: 999;              /* para que esté encima de todo */
+}
