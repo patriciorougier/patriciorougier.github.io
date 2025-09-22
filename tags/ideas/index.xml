@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ideas on Virtual Garden</title>
-    <link>https://patriciorougier.github.io/tags/ideas/</link>
+    <link>http://localhost:1313/tags/ideas/</link>
     <description>Recent content in Ideas on Virtual Garden</description>
     <generator>Hugo</generator>
     <language>es</language>
     <managingEditor>carlospatriciorougier9@gmail.com (Patricio Rougier)</managingEditor>
     <webMaster>carlospatriciorougier9@gmail.com (Patricio Rougier)</webMaster>
     <lastBuildDate>Sun, 08 Jun 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://patriciorougier.github.io/tags/ideas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/ideas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Supports better organization of ideas</title>
-      <link>https://patriciorougier.github.io/notes/note-6/</link>
+      <link>http://localhost:1313/notes/note-6/</link>
       <pubDate>Sun, 08 Jun 2025 00:00:00 +0000</pubDate><author>carlospatriciorougier9@gmail.com (Patricio Rougier)</author>
-      <guid>https://patriciorougier.github.io/notes/note-6/</guid>
+      <guid>http://localhost:1313/notes/note-6/</guid>
       <description></description>
     </item>
   </channel>
