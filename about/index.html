@@ -8,6 +8,19 @@
 
 
 <title>Acerca de - Virtual Garden</title>
+<meta name="description" content="
+  
+  📋 Copiar
+  
+print(&#34;Hola mundo&#34;)
+
+
+
+  
+    
+  
+  
+">
 
 <meta name="author" content="Patricio Rougier"><script type="application/ld+json">
 {
@@ -31,6 +44,19 @@
 </script>
 
 <meta property="og:title" content="Acerca de" />
+<meta property="og:description" content="
+  
+  📋 Copiar
+  
+print(&#34;Hola mundo&#34;)
+
+
+
+  
+    
+  
+  
+">
 <meta property="og:url" content="https://patriciorougier.github.io/about/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Virtual Garden" />
@@ -264,6 +290,21 @@
         <div class="row justify-content-center">
           <div class="col-sm-12 col-md-10 col-lg-8">
             
+              <div class="code-box">
+  
+  <button class="copy-button" onclick="copyCode(this)">📋 Copiar</button>
+  <pre><code class="language-python">
+print("Hola mundo")
+</code></pre>
+</div>
+<figure class="video-box">
+  <video autoplay loop muted playsinline width="600">
+    <source src="/videos/PruebaLatex1.mp4" type="video/mp4">
+  </video>
+  
+</figure>
+
+            
           </div>
         </div>
       </div>
@@ -273,7 +314,6 @@
 
 
 <footer>
-
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -372,7 +412,16 @@ document.addEventListener("DOMContentLoaded", function () {
     element.style.padding = "0";
   });
 });
- </script>
+ </script><script>
+function copyCode(button) {
+  const code = button.nextElementSibling.querySelector("code");
+  const text = code.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    button.innerText = "✅ Copiado";
+    setTimeout(() => button.innerText = "📋 Copiar", 2000);
+  });
+}
+</script>
 
     
   </body>

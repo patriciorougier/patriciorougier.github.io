@@ -612,7 +612,6 @@ Shortcode:</p>
 
 
 <footer>
-
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -711,7 +710,16 @@ document.addEventListener("DOMContentLoaded", function () {
     element.style.padding = "0";
   });
 });
- </script>
+ </script><script>
+function copyCode(button) {
+  const code = button.nextElementSibling.querySelector("code");
+  const text = code.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    button.innerText = "✅ Copiado";
+    setTimeout(() => button.innerText = "📋 Copiar", 2000);
+  });
+}
+</script>
 
     
   </body>

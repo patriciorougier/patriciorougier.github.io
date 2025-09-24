@@ -235,14 +235,14 @@
 
       <div class="col-sm-12 col-md-8 col-lg-8">
         <h2 class="fw-medium">Hola, soy Pato</h2>
-        <p class="fw-light">Bienvenidos a mi jardín!</p>
+        <p class="fw-light">Y bienvenido a mi jardín!</p>
 
-        <p class="fw-light">Me copa el mundo de la pagina web y me encanta mandarme a crear cosas ahí, por ejemplo todo esto. Este espacio es medio como un jardín digital, mi jardín digital: vas a encontrar desde reflexiones largas cuando me pinta pensar profundo, hasta notitas cortas tipo “che, mirá lo que aprendí hoy”. Todo mezclado con un poco de mi recorrido academico.</p>
+        <p class="fw-light">Me copa el mundo de las paginas web y me encanta mandarme a crear cosas ahí, por ejemplo: todo esto. Asi que se me ocurrió una manera de fusionar este mundo con lo academico. Soy estudiante de la Licenciatura en Fisica de la Universidad Nacional de Salta y me considero una persona que le gusta entender y construir conceptos tanto Matematicos y Fisicos, por lo que este espacio es medio como un jardín digital: vas a encontrar desde reflexiones largas cuando me pinta pensar profundo, hasta notitas cortas tipo “che, mirá lo que aprendí hoy”. Todo mezclado con un poco de mi recorrido academico.</p>
 
         <p class="fw-light">Si sos nuevo por aqui, sientete libre explorando la pagina.</p>
 
         <a href="/about/"  class="">
-          <button type="button" class="btn btn-success bg-cgreen">Explorar</button>
+          <button type="button" class="btn btn-success bg-cgreen">Explorar!</button>
         </a>
       </div>
 
@@ -550,7 +550,6 @@
 
 
 <footer>
-
   <div class="container">
     <div class="row">
       <div class="col-md-12">
@@ -649,7 +648,16 @@ document.addEventListener("DOMContentLoaded", function () {
     element.style.padding = "0";
   });
 });
- </script>
+ </script><script>
+function copyCode(button) {
+  const code = button.nextElementSibling.querySelector("code");
+  const text = code.innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    button.innerText = "✅ Copiado";
+    setTimeout(() => button.innerText = "📋 Copiar", 2000);
+  });
+}
+</script>
 
     
   </body>
